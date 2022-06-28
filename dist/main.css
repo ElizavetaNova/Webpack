@@ -1,0 +1,122 @@
+/*!*************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/styles/scss/index.scss ***!
+  \*************************************************************************************************************************************************/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+h1 {
+  color: #0026ff;
+}
+
+.zkn2dW_Mgs589M1Vyk6c {
+  display: block;
+}
+.XZ20ICn0_sMxUjsw7UrL {
+  width: 230px;
+  height: 282px;
+}
+
+.dcOYzA_zYT5xntgFbliN {
+  width: 200px;
+  height: 200px;
+}
+
+.Ln9eAqn5bO6MHP1veY1q {
+  width: 200px;
+  height: 58px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+}
+
+.n709gKapKNOqehVG3TVf {
+  width: 50px;
+  height: 58px;
+}
+
+.GzMnMkfuE8Pm6HKTT4Io {
+  width: 50px;
+  height: 58px;
+}
