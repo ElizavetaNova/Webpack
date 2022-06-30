@@ -1,6 +1,6 @@
-/*!*************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/styles/scss/index.scss ***!
-  \*************************************************************************************************************************************************/
+/*!*********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/scss/index.scss ***!
+  \*********************************************************************************************************************/
 * {
   padding: 0;
   margin: 0;
@@ -89,20 +89,20 @@ h1 {
   color: #0026ff;
 }
 
-.zkn2dW_Mgs589M1Vyk6c {
+.main-slider {
   display: block;
 }
-.XZ20ICn0_sMxUjsw7UrL {
+.main-slider__item {
   width: 230px;
   height: 282px;
 }
 
-.dcOYzA_zYT5xntgFbliN {
+.item-block__cover {
   width: 200px;
   height: 200px;
 }
 
-.Ln9eAqn5bO6MHP1veY1q {
+.cover-action__block {
   width: 200px;
   height: 58px;
   position: absolute;
@@ -111,12 +111,12 @@ h1 {
   right: 0;
 }
 
-.n709gKapKNOqehVG3TVf {
+.action-block__btn {
   width: 50px;
   height: 58px;
 }
 
-.GzMnMkfuE8Pm6HKTT4Io {
+.btn-svg__img {
   width: 50px;
   height: 58px;
 }
