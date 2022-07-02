@@ -1,11 +1,16 @@
 import { Album } from './model/model-album-item';
 import $ from 'jquery';
-import { getInlineSvg } from '../../utils/getInlineSvg';
 
-export function playlistCarouselItem(album: Album, index: number) {
+import './model/custom.d';
+import like from '../asset/like_icon.svg';
+import play from '../asset/play-arrow.svg';
+import share from '../asset/share_arrow.svg';
+
+export function playlistCarouselItem(album: Album) {
+    
 
     const imageElement = $(`<img>`).addClass('cover-background__img');
-    import(`/src/assets/${album.imgSrc}`)
+    import(`/src/asset/${album.imgSrc}`)
         .then((imgSrc) => {
             imageElement.attr('src', imgSrc.default);
         });
@@ -36,18 +41,32 @@ export function playlistCarouselItem(album: Album, index: number) {
 }
 
 function getActions() {
-    function createAction(svgName: string) {
-        const control = $('<button>').addClass(['action-block__btn', `btn-svg`]);
-        getInlineSvg(svgName).then(svg => {
-            svg.classList.add('icon');
-            control.append(svg);
-        });
-        return control;
-    }
+    //function createAction(svgName: string) {
+    //    const control = $('<button>').addClass(['action-block__btn', `btn-svg`]);
+    //    getInlineSvg(svgName).then(svg => {
+    //        svg.classList.add('icon');
+    //        control.append(svg);
+    //    });
+    //    return control;
+    //}
 
-    const likeElement = createAction('like.svg');
-    const shareElement = createAction('share.svg');
-    const playElement = createAction('play.svg');
+    like.addClass('btn-svg');
+    play.addClass('btn-svg');
+    share.addClass('btn-svg');
 
-    return [likeElement, playElement, shareElement];
+    const actionLike = $('<button>').addClass(['action-block__btn', `btn-svg`]);
+    actionLike.append(like);
+
+    const actionPlay = $('<button>').addClass(['action-block__btn', `btn-svg`]);
+    actionPlay.append(play);
+
+    const actionShare = $('<button>').addClass(['action-block__btn', `btn-svg`]);
+    actionShare.append(share);
+    
+
+    //const likeElement = createAction('like.svg');
+    //const shareElement = createAction('share.svg');
+    //const playElement = createAction('play.svg');
+
+    return [actionLike, actionPlay, actionShare];
 }

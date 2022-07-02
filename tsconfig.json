@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+    //testfix
+    "noEmit": false,
+    //
     "outDir": "./dist/",
     "noImplicitAny": true,
     "module": "ESNext",
@@ -16,6 +19,7 @@
     /* Enable all strict type-checking options. */
     "skipLibCheck": true
   },
+  "include": [ "src/typescript/index.ts", "src/typescript/model/svg.d.ts" ],
   "exclude": [
     "node_modules",
     "webpack.config.js"
