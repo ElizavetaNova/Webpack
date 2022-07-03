@@ -1,7 +1,7 @@
 import ".././/styles/scss/index.scss";
 import * as $ from 'jquery';
 
-import albums from '../data/albums.json';
+import albums from "../data/albums.json" assert { type: 'json' };
 import { playlistCarouselItem } from './album_item';
 
 window.addEventListener('load', () => {

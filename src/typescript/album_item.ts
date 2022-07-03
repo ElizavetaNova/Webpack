@@ -1,7 +1,7 @@
 import { Album } from './model/model-album-item';
 import $ from 'jquery';
 
-import './model/custom.d';
+//import './custom.d';
 import like from '../asset/like_icon.svg';
 import play from '../asset/play-arrow.svg';
 import share from '../asset/share_arrow.svg';
@@ -49,13 +49,13 @@ function getActions() {
     //    });
     //    return control;
     //}
-
-    like.addClass('btn-svg');
-    play.addClass('btn-svg');
-    share.addClass('btn-svg');
+    const svgElementLike = new DOMParser().parseFromString(like, 'image/svg+xml').documentElement;
+    svgElementLike.classList.add('btn-svg');
+    //play.addClass('btn-svg');
+    //share.addClass('btn-svg');
 
     const actionLike = $('<button>').addClass(['action-block__btn', `btn-svg`]);
-    actionLike.append(like);
+    actionLike.append(svgElementLike);
 
     const actionPlay = $('<button>').addClass(['action-block__btn', `btn-svg`]);
     actionPlay.append(play);
