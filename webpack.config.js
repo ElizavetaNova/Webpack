@@ -3,7 +3,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 
-
 module.exports = {
     entry: './src/typescript/index.ts',
     module: {
@@ -25,7 +24,7 @@ module.exports = {
             {
                 test: /\.tsx?$/,
                 use: 'ts-loader',
-                exclude: /node_modules/,
+                exclude: /node_modules/
             },
             {
                 test: /\.(png|jpg|jpeg|gif)$/i,
@@ -42,7 +41,8 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'index_bundle.js'
+        filename: 'index_bundle.js',
+        
     },
     plugins: [
         new HtmlWebpackPlugin({ template: './src/index.html' }),

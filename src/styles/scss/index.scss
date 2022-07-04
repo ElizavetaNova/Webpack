@@ -1,8 +1,6 @@
 @import "reset";
+@import "cover-item";
 
-h1{
-    color: #0026ff;
-}
 .main-slider {
     display:block;
     &__item {
@@ -11,29 +9,11 @@ h1{
     }
 }
 
-.item-block__cover {
 
-        width: 200px;
-        height: 200px;
-       //background: url('../../asset/primier.png');
-    
-}
-.cover-action {
-    &__block {
-        width: 200px;
-        height: 58px;
-        position: absolute;
-        top: 50%;
-        left: 0;
-        right: 0;
 
-        
-    }
-}
 .action-block {
     &__btn {
-        width: 50px;
-        height: 58px;
+        
 
         
     }
@@ -41,4 +21,8 @@ h1{
 .btn-svg__img {
     width: 50px;
     height: 58px;
+}
+.cover-background__img{
+    position:absolute;
+    display: block;
 }

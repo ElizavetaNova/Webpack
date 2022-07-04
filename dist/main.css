@@ -85,8 +85,49 @@ h6 {
   font-weight: 400;
 }
 
-h1 {
-  color: #0026ff;
+.item-block__cover {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.cover-action__block {
+  width: 200px;
+  height: 58px;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  right: 0;
+  text-align: -webkit-center;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.cover-action__block .action-block__btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.cover-action__block .action-block__btn:first-child {
+  width: 45px;
+  height: 45px;
+}
+.cover-action__block .action-block__btn:first-child .btn-svg {
+  width: 27px;
+  height: 27px;
+}
+.cover-action__block .action-block__btn:last-child {
+  width: 45px;
+  height: 45px;
+}
+.cover-action__block .action-block__btn:last-child .btn-svg {
+  width: 27px;
+  height: 27px;
+}
+.cover-action__block .action-block__btn .btn-svg {
+  width: 32px;
+  height: 32px;
 }
 
 .main-slider {
@@ -97,26 +138,12 @@ h1 {
   height: 282px;
 }
 
-.item-block__cover {
-  width: 200px;
-  height: 200px;
-}
-
-.cover-action__block {
-  width: 200px;
-  height: 58px;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-}
-
-.action-block__btn {
-  width: 50px;
-  height: 58px;
-}
-
 .btn-svg__img {
   width: 50px;
   height: 58px;
+}
+
+.cover-background__img {
+  position: absolute;
+  display: block;
 }

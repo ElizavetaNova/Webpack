@@ -1,0 +1,57 @@
+.item-block__cover {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    //background: url('../../asset/primier.png');
+}
+.cover-action {
+    &__block {
+        width: 200px;
+        height: 58px;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        right: 0;
+        text-align: -webkit-center;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+
+
+        .action-block {
+
+
+            &__btn {
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+
+                &:first-child {
+                    width: 45px;
+                    height: 45px;
+
+                    .btn-svg {
+                        width: 27px;
+                        height: 27px;
+                    }
+                }
+
+                &:last-child {
+                    width: 45px;
+                    height: 45px;
+
+                    .btn-svg {
+                        width: 27px;
+                        height: 27px;
+                    }
+                }
+
+                .btn-svg {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+        }
+    }
+}

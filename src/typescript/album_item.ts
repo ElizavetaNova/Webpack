@@ -34,6 +34,7 @@ export function playlistCarouselItem(album: Album) {
         .append(imageElement)
         .append($('<div class="cover-action__block action-block">')
             .append(actions));
+        
 
     return $(`<div class="main-slider__item slider-item">`)
         .append(coverWrapper)
@@ -51,6 +52,12 @@ function getActions() {
     //}
     const svgElementLike = new DOMParser().parseFromString(like, 'image/svg+xml').documentElement;
     svgElementLike.classList.add('btn-svg');
+
+    const svgElementPlay = new DOMParser().parseFromString(play, 'image/svg+xml').documentElement;
+    svgElementPlay.classList.add('btn-svg');
+
+    const svgElementShare = new DOMParser().parseFromString(share, 'image/svg+xml').documentElement;
+    svgElementShare.classList.add('btn-svg');
     //play.addClass('btn-svg');
     //share.addClass('btn-svg');
 
@@ -58,10 +65,10 @@ function getActions() {
     actionLike.append(svgElementLike);
 
     const actionPlay = $('<button>').addClass(['action-block__btn', `btn-svg`]);
-    actionPlay.append(play);
+    actionPlay.append(svgElementPlay);
 
     const actionShare = $('<button>').addClass(['action-block__btn', `btn-svg`]);
-    actionShare.append(share);
+    actionShare.append(svgElementShare);
     
 
     //const likeElement = createAction('like.svg');
