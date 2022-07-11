@@ -4,7 +4,6 @@
 @import "scroll";
 @import "fonts";
 
-
 .main-slider {
     margin-left: 10px;
 
@@ -15,7 +14,6 @@
 
     .main-slider {
         display: flex;
-        //width: 860px;
         height: 282px;
         flex-direction: row;
         align-content: space-around;
@@ -23,8 +21,6 @@
         align-items: center;
         gap: 0 20px;
         transform: translate(0,0);
-        
-        //overflow: hidden;
 
         &__item {
             width: 230px;
@@ -36,32 +32,8 @@
             align-items: stretch;
 
             &:hover .action-block {
-                /*display: flex;
-            flex-wrap: nowrap;
-            align-items: center;
-            justify-content: space-evenly;*/
-                /*&__btn{
-                    display:inline;
-                }*/
                 display: inline;
             }
         }
     }
 }
-
-
-/*.action-block {
-    &__btn {
-        
-
-        
-    }
-}
-.btn-svg__img {
-    width: 50px;
-    height: 58px;
-}
-.cover-background__img{
-    position:absolute;
-    display: block;
-}*/
