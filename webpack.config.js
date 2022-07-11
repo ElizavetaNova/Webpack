@@ -1,7 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-
+const MinifyCssPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = {
     entry: './src/typescript/index.ts',
@@ -33,7 +33,11 @@ module.exports = {
             {
                 test: /\.svg$/,
                 loader: 'svg-inline-loader'
-            }
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type: 'asset/resource',
+            },
         ]
     },
     resolve: {
@@ -50,6 +54,11 @@ module.exports = {
             filename: "[name].css",
         }),
     ],
-
+    optimization: {
+        minimize: true,
+        minimizer: [
+            new MinifyCssPlugin()
+        ]
+    },
     mode: 'development'
 }

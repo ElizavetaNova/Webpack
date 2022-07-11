@@ -34,7 +34,7 @@ export function playlistCarouselItem(album: Album) {
         .append(imageElement)
         .append($('<div class="cover-action__block action-block">')
             .append(actions));
-        
+      
 
     return $(`<div class="main-slider__item slider-item">`)
         .append(coverWrapper)

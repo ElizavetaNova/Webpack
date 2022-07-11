@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Vinslab';
+    src: url('../../fonts/VinSlabPro-LightItalic.ttf') format('ttf'), url('../../fonts/VinSlabPro-Light_0.ttf') format('ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+@mixin font {
+    font-family: 'Vinslab';
+    font-size: 20px;
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Премьера",
+    "description": "Открывает вам новые новинки",
+    "imgSrc": "premiere.png"
+  },
+  {
+    "title": "Плейлист дня",
+    "description": "Звучит по-вашему каждый день",
+    "imgSrc": "list-of-day.png"
+  },
+  {
+    "title": "Подкасты",
+    "description": "Собрано для вас",
+    "imgSrc": "podcasts.png"
+  },
+  {
+    "title": "Новые хиты",
+    "description": "Популярные треки последних месяцев",
+    "imgSrc": "new-hits.png"
+  },
+  {
+    "title": "Плейлист с Алисой",
+    "description": "Комментирует треки, шутит в тему",
+    "imgSrc": "play-Alise.png"
+  },
+  {
+    "title": "Видеошоты",
+    "description": "Слушайте и смотрите",
+    "imgSrc": "video-shots.png"
+  }
+]

@@ -1,11 +1,13 @@
 import ".././/styles/scss/index.scss";
 import * as $ from 'jquery';
-
 import albums from "../data/albums.json" assert { type: 'json' };
-import { playlistCarouselItem } from './album_item';
+import { playlistCarousel } from './carusel';
 
 window.addEventListener('load', () => {
+    //const offsetElement: HTMLElement | null = document.getElementById('#sliderListItems');
+    //console.log(offsetElement);
+
     const mainElement = document.getElementById('root');
     if (!mainElement) return;
-    mainElement.appendChild(playlistCarouselItem(albums[0])[0]);
+    mainElement.appendChild(playlistCarousel(albums)[0]);
 });
