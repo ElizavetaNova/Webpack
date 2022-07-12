@@ -9,7 +9,7 @@
 
     &__displayed {
         overflow: hidden;
-        width: 860px;
+        width: 870px;
     }
 
     .main-slider {
@@ -20,7 +20,10 @@
         justify-content: flex-start;
         align-items: center;
         gap: 0 20px;
-        transform: translate(0,0);
+
+        &__list {
+            transform: translateX(0);
+        }
 
         &__item {
             width: 230px;

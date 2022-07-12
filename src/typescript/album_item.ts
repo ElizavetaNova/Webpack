@@ -1,8 +1,6 @@
 import { Album } from './model/model-album-item';
 import $ from 'jquery';
-import like from '../asset/like_icon.svg';
-import play from '../asset/play-arrow.svg';
-import share from '../asset/share_arrow.svg';
+import { getInlineSvg } from './getInlineSvg';
 
 export function playlistCarouselItem(album: Album) {
     const imageElement = $(`<img>`).addClass('cover-background__img');
@@ -34,23 +32,27 @@ export function playlistCarouselItem(album: Album) {
 }
 
 function getActions() {
-    const svgElementLike = new DOMParser().parseFromString(like, 'image/svg+xml').documentElement;
-    svgElementLike.classList.add('btn-svg');
 
-    const svgElementPlay = new DOMParser().parseFromString(play, 'image/svg+xml').documentElement;
-    svgElementPlay.classList.add('btn-svg');
-
-    const svgElementShare = new DOMParser().parseFromString(share, 'image/svg+xml').documentElement;
-    svgElementShare.classList.add('btn-svg');
-
-    const actionLike = $('<button>').addClass(['action-block__btn', `btn-svg`]);
-    actionLike.append(svgElementLike);
+    const actionLike = $('<button>').addClass(['action-block__btn', `btn-svg`]);    
+    const svgElementLike = getInlineSvg('like_icon.svg');
+    svgElementLike.then(svg => {
+        svg.classList.add('btn-svg');
+        actionLike.append(svg);
+    });
 
     const actionPlay = $('<button>').addClass(['action-block__btn', `btn-svg`]);
-    actionPlay.append(svgElementPlay);
+    const svgElementPlay = getInlineSvg('play-arrow.svg');
+    svgElementPlay.then(svg => {
+        svg.classList.add('btn-svg');
+        actionPlay.append(svg);
+    })
 
     const actionShare = $('<button>').addClass(['action-block__btn', `btn-svg`]);
-    actionShare.append(svgElementShare);
+    const svgElementShare = getInlineSvg('share_arrow.svg');
+    svgElementShare.then(svg => {
+        svg.classList.add('btn-svg');
+        actionShare.append(svg);
+    })
 
     return [actionLike, actionPlay, actionShare];
 }

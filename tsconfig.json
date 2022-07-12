@@ -33,10 +33,5 @@
     //"strict": true, /* Enable all strict type-checking options. */
     //"target": "ES5" /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
   },
-  "files": [ "custom.d.ts" ],
-  "exclude": [
-    "node_modules",
-    "webpack.config.js",
-    "./src/data/albums.json"
-  ]
+  "include": ["./src/typescript"]
 }
