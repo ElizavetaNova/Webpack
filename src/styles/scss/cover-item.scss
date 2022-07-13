@@ -16,6 +16,12 @@
         text-align: -webkit-center;
         display: none;
 
+        &:hover {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         .action-block {
 
             &__btn {
@@ -43,16 +49,22 @@
                         height: 45px;
                         transform: scale(1);
 
-                        .btn-svg {
-                            width: 30px;
-                            height: 30px;
+                        .btn-svg{
+                        &__img{
+                            /*width: 30px;
+                            height: 30px;*/
                             transform: scale(1);
+
+                        }
                         }
                     }
 
-                    .btn-svg {
-                        width: 23px;
-                        height: 23px;
+                    .btn-svg{
+                        &__img{
+                            width: 23px;
+                            height: 23px;
+                        
+                        }
                     }
                 }
 
@@ -69,12 +81,13 @@
                     &:hover {
                         width: 45px;
                         height: 45px;
-                        transform: scale(1);
+                        //transform: scale(1);
 
                         .btn-svg {
                             width: 30px;
                             height: 30px;
-                            transform: scale(1);
+                            display: flex;
+                            //transform: scale(1);
                         }
                     }
 
@@ -87,9 +100,6 @@
                 .btn-svg {
                     width: 30px;
                     height: 30px;
-                    &:hover{
-
-                    }
                 }
             }
         }

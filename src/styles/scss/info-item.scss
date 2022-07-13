@@ -1,14 +1,11 @@
 .item-block {
 
     &__info {
-        margin-top: 15px;
         width: 200px;
-
-        .block-info {
-
-            &__description{
-                margin-top: 10px;
-            }
-        }
-    }
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: nowrap;
+    }    
 }
+

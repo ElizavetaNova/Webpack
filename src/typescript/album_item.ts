@@ -11,10 +11,7 @@ export function playlistCarouselItem(album: Album) {
 
     const infoElement = $(`        
                     <div class="item-block__info block-info">
-                        <span class="block-info__title info-title">
-                            <span class="info-title__text">${album.title}</span>
-                            <span class="info-title__point"></span>
-                        </span>
+                        <p class="block-info__title info-title">${album.title}</p>
                         <p class="block-info__description">${album.description}</p>
                     </div>
                 </div>
@@ -36,21 +33,21 @@ function getActions() {
     const actionLike = $('<button>').addClass(['action-block__btn', `btn-svg`]);    
     const svgElementLike = getInlineSvg('like_icon.svg');
     svgElementLike.then(svg => {
-        svg.classList.add('btn-svg');
+        svg.classList.add('btn-svg__img');
         actionLike.append(svg);
     });
 
     const actionPlay = $('<button>').addClass(['action-block__btn', `btn-svg`]);
     const svgElementPlay = getInlineSvg('play-arrow.svg');
     svgElementPlay.then(svg => {
-        svg.classList.add('btn-svg');
+        svg.classList.add('btn-svg__img');
         actionPlay.append(svg);
     })
 
     const actionShare = $('<button>').addClass(['action-block__btn', `btn-svg`]);
     const svgElementShare = getInlineSvg('share_arrow.svg');
     svgElementShare.then(svg => {
-        svg.classList.add('btn-svg');
+        svg.classList.add('btn-svg__img');
         actionShare.append(svg);
     })
 
