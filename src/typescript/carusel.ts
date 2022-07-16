@@ -17,11 +17,11 @@ export function playlistCarousel(items: Album[]) {
     
     return $('<div class="main-slider">')
         .append(listDisplayedElements)
-        .append(scroll);  
+        .append(scrollButtons);
 }
 
 function getScrollButtons() {
-    const buttonRight = $('<button>').addClass(['slider-scroll__btn', `scroll-svg`]);
+    const buttonRight = $('<button>').addClass(['main-scroll__btn', `scroll-svg`, 'btn-right']);
     const svgElementRightArrow = getInlineSvg('rightArrow.svg');
     svgElementRightArrow.then(svg => {
         svg.classList.add('scroll-svg__img');
@@ -29,7 +29,7 @@ function getScrollButtons() {
     })
     buttonRight.bind('click', srollElementsRight);
 
-    const buttonLeft = $('<button>').addClass(['slider-scroll__btn', `scroll-svg`]);
+    const buttonLeft = $('<button>').addClass(['main-scroll__btn', `scroll-svg`, 'btn-left']);
     const svgElementLeftArrow = getInlineSvg('leftArrow.svg');
     svgElementLeftArrow.then(svg => {
         svg.classList.add('scroll-svg__img');
