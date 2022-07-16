@@ -1,0 +1,92 @@
+.item-block__cover {
+    width: 200px;
+    height: 200px;
+    position: relative;    
+}
+
+.cover-action {
+
+    &__block {
+        width: 200px;
+        height: 58px;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        right: 0;
+        text-align: -webkit-center;
+        display: none;
+    }
+
+    .action-block {
+
+        &__btn {
+            border-radius: 100%;
+            vertical-align: middle;
+            width: 50px;
+            height: 50px;
+            transition: .1s ease-out;
+
+            &:first-child {
+                width: 45px;
+                height: 45px;
+                vertical-align: middle;
+                border: none;
+                outline: none;
+                background: none;
+                z-index: 1;
+                margin-right: 0;
+
+                &:hover {
+                    transform: scale(1.1);
+
+                    .btn-svg {
+                        &__img {
+                            cursor:pointer;
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+
+                .btn-svg {
+                    &__img {
+                        width: 23px;
+                        height: 23px;
+                    }
+                }
+            }
+
+            &:last-child {
+                width: 45px;
+                height: 45px;
+                vertical-align: middle;
+                border: none;
+                outline: none;
+                background: none;
+
+                &:hover {
+                    transform: scale(1.1);
+                    .btn-svg { 
+                        transform: scale(1.1);
+                    }
+                }
+
+                .btn-svg {
+                    &__img {
+                        width: 23px;
+                        height: 23px;
+                    }
+                }
+            }
+
+            .btn-svg {
+                &__img {
+                    width: 33px;
+                    height: 33px;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

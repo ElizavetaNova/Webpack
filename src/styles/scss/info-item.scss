@@ -1,0 +1,11 @@
+.item-block {
+
+    &__info {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: nowrap;
+    }    
+}
+

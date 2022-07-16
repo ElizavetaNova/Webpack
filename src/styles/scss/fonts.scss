@@ -1,0 +1,8 @@
+@import "mixins";
+
+.item-block {
+    &__info {
+        @include font;
+    }
+
+}
