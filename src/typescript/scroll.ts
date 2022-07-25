@@ -12,7 +12,7 @@ export function srollElementsRight() {
 
     const sliderList = $('#sliderListItems');
     const translateX = getTransform(sliderList);
-    let translateXTypeNumber: number; // положение блока до смещения
+    let translateXTypeNumber: number; // РїРѕР»РѕР¶РµРЅРёРµ Р±Р»РѕРєР° РґРѕ СЃРјРµС‰РµРЅРёСЏ
     let shift: number;
     const hiddenElements = 2;
     if (translateX === undefined) {
@@ -21,7 +21,7 @@ export function srollElementsRight() {
     }
     else {
         translateXTypeNumber = Number(translateX);
-        shift = translateXTypeNumber - widthOffset; //искомое смещение 0,220,440...
+        shift = translateXTypeNumber - widthOffset; //РёСЃРєРѕРјРѕРµ СЃРјРµС‰РµРЅРёРµ 0,220,440...
         if (shift === -widthShiftElement || shift === 0) {
             sliderList.css({ 'transform': '' });
             listAllElements.forEach(element => (element as HTMLElement).style.transform = '')
