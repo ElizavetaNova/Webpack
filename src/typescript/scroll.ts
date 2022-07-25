@@ -16,14 +16,13 @@ export function srollElementsRight() {
     let shift: number;
     const hiddenElements = 2;
     if (translateX === undefined) {
-        translateXTypeNumber = 0;
-        shift = - widthOffset;
+        shift = -widthOffset;
         sliderList.css('transform', `translateX(${shift}px)`);
     }
     else {
         translateXTypeNumber = Number(translateX);
         shift = translateXTypeNumber - widthOffset; //искомое смещение 0,220,440...
-        if ((shift == -widthShiftElement) || (shift == 0)) {
+        if (shift === -widthShiftElement || shift === 0) {
             sliderList.css({ 'transform': '' });
             listAllElements.forEach(element => (element as HTMLElement).style.transform = '')
         }
