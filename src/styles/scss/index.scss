@@ -1,0 +1,42 @@
+@import "reset";
+@import "cover-item";
+@import "info-item";
+@import "scroll";
+@import "fonts";
+
+.main-slider {
+    margin-left: 10px;
+
+    &__displayed {
+        overflow: hidden;
+        width: 870px;
+    }
+
+    .main-slider {
+        display: flex;
+        height: 282px;
+        flex-direction: row;
+        align-content: space-between;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0 20px;
+
+        &__list {
+            transform: translateX(0);
+        }
+
+        &__item {
+            display: flex;
+            height: 282px;
+            width: 230px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            &:hover {
+                .cover-action__block {
+                    display:inline;
+                }
+            }
+        }
+    }
+}

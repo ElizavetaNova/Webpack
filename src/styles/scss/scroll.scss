@@ -1,0 +1,18 @@
+.scroll-svg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 75px;
+    position: absolute;
+
+    &__img {
+        width: 20px;
+        height: 20px;
+    }
+}
+.btn-right {
+    left: 860px;
+}
+.btn-left{
+    left:0;
+}
